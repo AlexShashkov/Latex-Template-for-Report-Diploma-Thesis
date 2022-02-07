@@ -1,4 +1,4 @@
-% Список команд 
+% Список команд
 
 %%%%%%%%%%%% \image %%%%%%%%%%%%%%%%%%
 
@@ -12,20 +12,27 @@
 \end{figure}
 }
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%%%%%%%%%% \codefromfile  %%%%%%%%%%%%%%%%%%
-
-% \codefromfile {Имя файла}
-
-\newcommand{\codefromfile}[2]{
-\begin{code}
-	\inputminted[breaklines=true, framesep=10pt, fontsize=\footnotesize, firstline=1,]{#2}{Listings/#1}
-\end{code}
+% Формула с нумерацией
+\newcommand{\centreq}[1]{
+\begin{equation}
+#1
+\end{equation}
 }
+
+% Главы с центрированием
+\newcommand{\csection}[1]{
+	\section{\centering#1}
+}
+\newcommand{\ocsection}[1]{
+	\section*{\centering#1}
+}
+\newcommand{\csubsection}[1]{
+	\subsection{\centering#1}
+}
+\newcommand{\ocsubsection}[1]{
+	\subsection*{\centering#1}
+}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

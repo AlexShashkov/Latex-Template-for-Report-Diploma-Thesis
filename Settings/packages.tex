@@ -8,11 +8,16 @@
 
 \usepackage{caption}
 
+%\usepackage{sectsty}
+% нужен для более удобного форматирования, но т.к. мы используем
+% 14 шрифт, то приходится использовать extrarticle, который
+% не поддерживается.
+% ладно.
+
 \usepackage{graphicx} % пакет для использования графики (чтобы вставлять рисунки, фотографии и пр.)
 
 
 % качественные листинги кода
-\usepackage{minted}
 \usepackage{listings}
 \usepackage{lstfiracode}
 
@@ -22,11 +27,12 @@
 
 \usepackage{url} % поддержка url-ссылок
 
-\usepackage{natbib} % менеджер цитирования natlib.
+\usepackage[numbers]{natbib} % для нумерации
+% \usepackage{natbib} % менеджер цитирования natlib.
 
 \bibliographystyle{unsrtnat} % выбираем стиль библиографии отсюда: https://www.overleaf.com/learn/latex/Natbib_bibliography_styles
 
-\setcitestyle{authoryear, open={(},close={)}} % Определяем стиль цитирования. Указываем, чтобы цитирование в тексте вставлялось в формате (Автор, год). 
+\setcitestyle{authoryear, open={(},close={)}} % Определяем стиль цитирования. Указываем, чтобы цитирование в тексте вставлялось в формате (Автор, год).
 
 \usepackage{multirow} % таблицы с объединенными строками
 

@@ -1,0 +1,13 @@
+# Fdb version 3
+["xdvipdfmx"] 1644234551 "build/content.xdv" "build/content.pdf" "build/content" 1644234552
+  "build/content.xdv" 1644234550 5144 13206a6b05b83c83adb49c7332e265ea "xelatex"
+  (generated)
+  "build/content.pdf"
+["xelatex"] 1644234550 "content.tex" "build/content.xdv" "content" 1644234552
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1640600964 39911 2da6c67557ec033436fe5418a70a8a61 ""
+  "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1644160805 5548502 4300687e84c26a9d17a4059a655a7501 ""
+  "build/content.aux" 1644234480 3614 2af6bfaa6c35de4f863614d9f0825642 ""
+  "content.tex" 1644234549 8181 ad11dcb1c6468d220d439569f625381f ""
+  (generated)
+  "build/content.log"
+  "build/content.xdv"

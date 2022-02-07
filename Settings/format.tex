@@ -5,17 +5,17 @@
 % Шрифт для курсовой Times New Roman, размер – 14 пт.
 \setdefaultlanguage[spelling=modern]{russian}
     \setotherlanguage{english}
-    
+
 \setmonofont{Times New Roman}
-\setmainfont{Times New Roman} 
-\setromanfont{Times New Roman} 
+\setmainfont{Times New Roman}
+\setromanfont{Times New Roman}
 \newfontfamily\cyrillicfont{Times New Roman}
 
 
 
 
 % шрифт для URL-ссылок
-\urlstyle{same} 
+\urlstyle{same}
 
 % Междустрочный интервал должен быть равен 1.5 сантиметра.
 \linespread{1.5} % междустрочный интервал
@@ -43,23 +43,23 @@
 
 
 % Цвет гиперссылок и цитирования
-\usepackage{hyperref} 
- \hypersetup{ 
-     colorlinks=true, 
-     linkcolor=black, 
-     filecolor=blue, 
-     citecolor = black,       
-     urlcolor=blue, 
+\usepackage{hyperref}
+ \hypersetup{
+     colorlinks=true,
+     linkcolor=black,
+     filecolor=blue,
+     citecolor = black,
+     urlcolor=blue,
      }
-    
+
 
 % Нумерация рисунков
 \counterwithin{figure}{section}
 
 % Нумерация таблиц
 \counterwithin{table}{section}
-
-\counterwithin{table}{section}
+\captionsetup[table]{labelsep=space,
+         justification=raggedright, singlelinecheck=off}
 
 % шрифт для листингов с лигатурами
 \setmonofont{FiraCode-Regular.otf}[
@@ -69,10 +69,9 @@
 ]
 
 
-
 % настройка подсветки кода и окружения для листингов
 %\usemintedstyle{colorful} % делает подсветку для кода
-\newenvironment{code}{\captionsetup{type=listing}}{}
+% \newenvironment{code}{\captionsetup{type=listing}}{}
 
 
 % Посмотреть ещё стили можно тут https://www.overleaf.com/learn/latex/Code_Highlighting_with_minted

@@ -10,10 +10,22 @@
 
 %%%%%%%%%%%% Пакеты %%%%%%%%%%%%%%%%%%
 \include{Settings/packages}
+\usepackage{titletoc}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%% Формат %%%%%%%%%%%%%%%%%%
 \include{Settings/format}
+%\makeatletter
+%\renewcommand*\l@section{\@dottedtocline{1}{1.5em}{1em}}
+%\renewcommand*\l@subsection{\@dottedtocline{1}{3em}{1.5em}}
+%\makeatother
+\addto\captionsrussian{%
+  \renewcommand{\contentsname}%
+    {\centering Оглавление}%
+}
+\contentsmargin{0pt}
+\dottedcontents{section}[2.3em]{}{2.3em}{5pt}
+\dottedcontents{subsection}[5.5em]{}{3.2em}{5pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -22,6 +34,9 @@
 
 %%%%%%%%%%%% Начало документа %%%%%%%%%%%%%%%%%%
 \begin{document}
+
+% https://www.overleaf.com/learn/latex/Natbib_citation_styles
+\setcitestyle{square,numbers,comma}
 
 
 
@@ -37,7 +52,9 @@
 
 
 %%%%%%%%%%%% Содержание %%%%%%%%%%%%%%%%%%
-\include{tocpage}
+\newpage
+\tableofcontents
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -47,9 +64,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
 %%%%%%%%%%%% Источники %%%%%%%%%%%%%%%%%%
-\include{bibpage}
+% refs.blib
+\newpage
+\renewcommand*\refname{Список приложений}
+\nocite{*}
+\bibliography{refs}
+\addcontentsline{toc}{section}{Список приложений}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

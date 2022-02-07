@@ -1,0 +1,13 @@
+# Fdb version 3
+["xdvipdfmx"] 0 "build/commands.xdv" "build/commands.pdf" "build/commands" 0
+  "build/commands.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "build/commands.pdf"
+["xelatex"] 1644234567 "commands.tex" "build/commands.xdv" "commands" 1644234568
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1640600964 39911 2da6c67557ec033436fe5418a70a8a61 ""
+  "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1644160805 5548502 4300687e84c26a9d17a4059a655a7501 ""
+  "build/commands.aux" 1644234479 862 f1c7e73d022e6841ce4fe2b14e4b7c1f ""
+  "commands.tex" 1644234567 750 0d6aa86d94f3c7c4e99d4ae7d2755c8a ""
+  (generated)
+  "build/commands.log"
+  "build/commands.xdv"
