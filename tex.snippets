@@ -1,3 +1,33 @@
+snippet image "Image"
+\image{${1}}{${2}}{${3:1}}
+${4}
+endsnippet
+
+snippet centreq "Centered formula"
+\centreq{${1}}
+${2}
+endsnippet
+
+snippet section "Centered section"
+\csection{${1}}
+${2}
+endsnippet
+
+snippet osection "Centered section without numiration in toc"
+\ocsection{${1}}
+${2}
+endsnippet
+
+snippet subsection "Centered subsection"
+\csubsection{${1}}
+${2}
+endsnippet
+
+snippet osection "Centered subsection without numiration in toc"
+\ocsubsection{${1}}
+${2}
+endsnippet
+
 snippet today "Date"
 `date +%F`
 endsnippet
