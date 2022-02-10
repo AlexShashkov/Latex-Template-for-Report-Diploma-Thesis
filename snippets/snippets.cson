@@ -99,7 +99,7 @@
     \\\\land
     """
 
-  'Perpendicualr':
+  'Perpendicualr \ перпендикулярно':
     'prefix': 'sperp'
     'body': """
     \\\\perp
@@ -229,7 +229,7 @@
     \\\\overrightarrow{${0}}
     """
 
-  'Map':
+  'Map \ отображение':
     'prefix': 'smap'
     'body': """
     ${1} : ${2} \\\\to ${3}
@@ -247,6 +247,12 @@
     \\\\Rightarrow
     """
 
+  'Scalar':
+    'prefix': 'ss'
+    'body': """
+    \left\langle ${1} \right\rangle
+    """
+
   'Right arrow':
     'prefix': 'sarrow'
     'body': """
@@ -259,8 +265,195 @@
     \\\\Rightarrow
     """
 
-  'Fraction':
+  'Fraction \ деление':
     'prefix': 'sfrac'
     'body': """
     \\\\frac{$1}{$2}$0
+    """
+
+  '3x3 Matrix \ матрица':
+    'prefix': 'smatrix'
+    'body': """
+    \\\\begin{bmatrix}
+       ${1} & ${2} & ${3} \\\\\\\\
+       ${4} & ${5} & ${6} \\\\\\\\
+       ${7} & ${8} & ${9}
+    \\\\end{bmatrix}
+    """
+
+  'E Matrix \ матрица':
+    'prefix': 'sematrix'
+    'body': """
+    \\\\begin{bmatrix}
+       1 & 0 & 0 \\\\\\\\
+       0 & 1 & 0 \\\\\\\\
+       0 & 0 & 1
+    \\\\end{bmatrix}
+    """
+
+    'Expanded Matrix \ матрица':
+      'prefix': 'sexmatrix'
+      'body': """
+      \\\\begin{vmatrix}
+        ${1} & \\\\cdots & ${2} \\\\\\\\
+        \\\\vdots & \\\\ddots & \\\\vdots \\\\\\\\
+        ${3} & \\\\cdots & ${4}
+      \\\\end{vmatrix}
+      """
+
+  '[ System \ система ':
+    'prefix': 'sbsytem'
+    'body': """
+    \\\\left[
+      \\\\begin{array}{ll}
+      ${1} \\\\\\\\
+      ${2}
+      \\\\end{array}
+    \\\\right .
+    """
+
+  'Fundamental system \ ФСР':
+    'prefix': 'sfsr'
+    'body': """
+    \\\\left\\\\langle
+      \\\\begin{array}{c}
+      ${1} \\\\\\\\
+      ${2}
+      \\\\end{array}
+    \\\\right\\\\rangle
+    """
+
+  'Array \ массив':
+    'prefix': 'sarray'
+    'body': """
+    \\\\begin{array}{c}
+    ${1} \\\\\\\\
+    ${2}
+    \\\\end{array}
+    """
+
+  'R field':
+    'prefix': 'sR'
+    'body': """
+    \\\\mathbb{R}
+    """
+
+  'Natural numbers':
+    'prefix': 'sN'
+    'body': """
+    \\\\mathbb{N}
+    """
+
+  'Complex numbers':
+    'prefix': 'sC'
+    'body': """
+    \\\\mathbb{C}
+    """
+
+  'Z numbers':
+    'prefix': 'sZ'
+    'body': """
+    \\\\mathbb{Z}
+    """
+
+  'Bold math number':
+    'prefix': 'smline'
+    'body': """
+    \\\\mathbb{${1}}
+    """
+
+  'Beautiful math number':
+    'prefix': 'smcool'
+    'body': """
+    \\\\mathcal{${1}}
+    """
+
+  'Phi':
+    'prefix': 'sphi'
+    'body': """
+    \\\\Phi
+    """
+
+  'Epsilon':
+    'prefix': 'sepsilon'
+    'body': """
+    \\\\varepsilon
+    """
+
+  'Zeta':
+    'prefix': 'sz'
+    'body': """
+    \\\\zeta
+    """
+
+  'Mu':
+    'prefix': 'smu'
+    'body': """
+    \\\\mu
+    """
+
+  'Big zeta':
+    'prefix': 'sbz'
+    'body': """
+    \\\\Zeta
+    """
+
+  'Big mu':
+    'prefix': 'sbm'
+    'body': """
+    \\\\Mu
+    """
+
+  'Nabla \ reversed triangle':
+    'prefix': 'snabla'
+    'body': """
+    \\\\nabla
+    """
+
+  'delta differential':
+    'prefix': 'sddiff'
+    'body': """
+    \\\\frac{\\\\delta (${1})}{\\\\delta (${2})}
+    """
+
+  'differential':
+    'prefix': 'sdiff'
+    'body': """
+    \\\\frac{d(${1})}{d(${2})}
+    """
+
+  'subset \ подмножество':
+    'prefix': 'ssubset'
+    'body': """
+    \\\\subset
+    """
+
+  'cong \ изоморфно':
+    'prefix': 'scong'
+    'body': """
+    \\\\cong
+    """
+
+  'equiv \ эквивалентно':
+    'prefix': 'seq'
+    'body': """
+    \\\\equiv
+    """
+
+  'equiv \ нормаль \ две палки':
+    'prefix': 'snorm'
+    'body': """
+    \\\\left\\\\lVert ${1} \\\\right\\\\rVert
+    """
+
+  'cancel \ зачеркнуть':
+    'prefix': 'scancel'
+    'body': """
+    \\\\cancel
+    """
+
+  'cancelto \ стремится к':
+    'prefix': 'scancelto'
+    'body': """
+    \\\\cancelto
     """
