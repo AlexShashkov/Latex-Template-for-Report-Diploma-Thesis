@@ -3,11 +3,10 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
 A level-1 auxiliary file: commands.aux
-A level-1 auxiliary file: content.aux
 Database file #1: refs.bib
 You've used 4 entries,
             2481 wiz_defined-function locations,
-            577 strings with 5004 characters,
+            576 strings with 4993 characters,
 and the built_in function-call counts, 1116 in all, are:
 = -- 95
 > -- 21

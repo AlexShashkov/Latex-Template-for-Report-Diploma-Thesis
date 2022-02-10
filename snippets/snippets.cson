@@ -1,0 +1,266 @@
+'.text.tex':
+  'Image':
+    'prefix': 'simage'
+    'body': """
+    \\\\image{${1}}{${2}}{${3:1}}
+    ${4}
+    """
+  'Centered formula':
+    'prefix': 'scentreq'
+    'body': """
+    \\\\centreq{${1}}
+    ${2}
+    """
+  'Centered section':
+    'prefix': 'ssection'
+    'body': """
+    \\\\csection{${1}}
+    ${2}
+    endsnippet
+    """
+
+  'Centered section without numiration in toc':
+    'prefix': 'sosection'
+    'body': """
+    \\\\ocsection{${1}}
+    ${2}
+    endsnippet
+    """
+
+  'Centered subsection':
+    'prefix': 'ssubsection'
+    'body': """
+    \\\\csubsection{${1}}
+    ${2}
+    endsnippet
+    """
+
+  'Centered subsection without numiration in toc':
+    'prefix': 'sosection'
+    'body': """
+    \\\\ocsubsection{${1}}
+    ${2}
+    endsnippet
+    """
+
+  'Definition':
+    'prefix': 'sdef'
+    'body': """
+    \\\\newline
+    \\\\tab Определение: ${1} \\\\newline
+    ${2}
+    """
+
+  'Let symbol':
+    'prefix': 'slet'
+    'body': """
+    \\\\sqsupset
+    """
+
+  'E symbol':
+    'prefix': 'sE'
+    'body': """
+    \\\\exists
+    """
+
+  'E! symbol':
+    'prefix': 'sE!'
+    'body': """
+    \\\\exists!
+    """
+
+  'Doesnt exist':
+    'prefix': 'sNE'
+    'body': """
+    \\\\nexists
+    """
+
+  'Any symbol':
+    'prefix': 'sany'
+    'body': """
+    \\\\forall
+    """
+
+  'Logical not':
+    'prefix': 'snot'
+    'body': """
+    \\\\neg
+    """
+
+  'Logical or':
+    'prefix': 'sor'
+    'body': """
+    \\\\lor
+    """
+
+  'Logical and':
+    'prefix': 'sand'
+    'body': """
+    \\\\land
+    """
+
+  'Perpendicualr':
+    'prefix': 'sperp'
+    'body': """
+    \\\\perp
+    """
+
+  'Parallel':
+    'prefix': 'spll'
+    'body': """
+    \\\\parallel
+    """
+
+  'Not parallel':
+    'prefix': 'sNpll'
+    'body': """
+    \\\\nparallel
+    """
+
+  'In':
+    'prefix': 'sin'
+    'body': """
+    \\\\in
+    """
+
+  'Theorem':
+    'prefix': 'stheorem'
+    'body': """
+    \\\\newline
+    \\\\tab Теорема: ${1} \\\\newline
+    ${2}
+    """
+
+  'Proof':
+    'prefix': 'sproof'
+    'body': """
+    \\\\newline
+    Доказательство:
+    \\\\newline
+    \\\\begin{proof}
+    ${1}
+    \\\\end{proof}
+    ${2}
+    """
+
+  'Math display':
+    'prefix': 'smd'
+    'body': """
+    \\\\[
+    $1
+    s\\\\] $0
+    """
+
+  'Limit':
+    'prefix': 'slim'
+    'body': """
+    \\\\lim_{${1:x} \\\\to ${2:\\\\infty}} ${3:f(x)}
+    """
+
+  'Sum':
+    'prefix': 'ssum'
+    'body': """
+    \\\\sum_{${1:x} = 1}^{$2:\\\\infty}
+    """
+
+  'Product':
+    'prefix': 'sprod'
+    'body': """
+    \\\\prod_{${1:i}=${2:a}^{${3:b}} ${4:f(i)}${0}
+    """
+
+  'Infinity':
+    'prefix': 'sinf'
+    'body': """
+    \\\\infty
+    """
+
+  'Integral':
+    'prefix': 'sintegral'
+    'body': """
+    \\\\int_{${1:a}}^{${2:b}} ${3:x} \\\\,${4:dx}
+    """
+
+  'Double integral':
+    'prefix': 'sdintegral'
+    'body': """
+    \\\\iint_${1:V} ${2:\\\\mu}(${3:u},${4:v}) \\\\,d${5:u}\\\\,d${6:v}${0}
+    """
+
+  'Tripple integral':
+    'prefix': 'stintegral'
+    'body': """
+    \\\\iiint_${1:V} ${2:\\\\mu}(${3:u},${4:v},${5:w}) \\\\,d${6:u}\\\\,d${7:v}\\\\,d${8:w} ${0}
+    """
+
+  'O Integral':
+    'prefix': 'sointegral'
+    'body': """
+    \\\\oint_${1:V} ${2:f(s)} \\\\,d${3:s}
+    """
+
+  'Hat':
+    'prefix': 'shat'
+    'body': """
+    \\\\hat{$1}$0
+    """
+
+  'Bar':
+    'prefix': 'sbar'
+    'body': """
+    \\\\bar{$1}${0}
+    """
+
+  'Vector':
+    'prefix': 'svec'
+    'body': """
+    \\\\vec{$1}
+    """
+
+  'Determinant':
+    'prefix': 'sdet'
+    'body': """
+    \\\\det(${0})
+    """
+
+  'Extensible hat arrow':
+    'prefix': 'sharrow'
+    'body': """
+    \\\\overrightarrow{${0}}
+    """
+
+  'Map':
+    'prefix': 'smap'
+    'body': """
+    ${1} : ${2} \\\\to ${3}
+    """
+
+  'Reversed arrow':
+    'prefix': 'slarrow'
+    'body': """
+    \\\\gets
+    """
+
+  'Implication':
+    'prefix': 'simp'
+    'body': """
+    \\\\Rightarrow
+    """
+
+  'Right arrow':
+    'prefix': 'sarrow'
+    'body': """
+    \\\\Rightarrow
+    """
+
+  'To':
+    'prefix': 'sto'
+    'body': """
+    \\\\Rightarrow
+    """
+
+  'Fraction':
+    'prefix': 'sfrac'
+    'body': """
+    \\\\frac{$1}{$2}$0
+    """

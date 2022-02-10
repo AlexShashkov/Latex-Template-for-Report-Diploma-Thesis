@@ -829,9 +829,6 @@ INPUT build/main.aux
 INPUT build/commands.aux
 INPUT build/commands.aux
 INPUT build/commands.aux
-INPUT build/content.aux
-INPUT build/content.aux
-INPUT build/content.aux
 OUTPUT build/main.aux
 INPUT /usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
@@ -926,16 +923,6 @@ INPUT build/main.toc
 INPUT build/main.toc
 OUTPUT build/main.toc
 OUTPUT build/main.xdv
-INPUT ./content.tex
-INPUT ./content.tex
-INPUT ./content.tex
-OUTPUT build/content.aux
-INPUT ./content.tex
-INPUT ./content.tex
-INPUT ./content.tex
-INPUT content.tex
-INPUT ./content.tex
-INPUT content.tex
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
@@ -959,8 +946,5 @@ INPUT build/main.aux
 INPUT build/commands.aux
 INPUT build/commands.aux
 INPUT build/commands.aux
-INPUT build/content.aux
-INPUT build/content.aux
-INPUT build/content.aux
 INPUT build/main.out
 INPUT build/main.out
