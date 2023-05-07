@@ -5,11 +5,23 @@
 % \image {Имя изображения.расширение}{Подпись к рисунку}{Скейл Изображения}
 
 \newcommand{\image}[3]{
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[width=#3\textwidth]{#1}
-	\caption{#2}
-\end{figure}
+	\begin{figure}[!hb]
+		\centering
+		\includegraphics[width=#3\textwidth]{#1}
+		\caption{#2}
+	\end{figure}
+}
+
+% \timage {Основные параметры}{Содержание}{Подпись}
+
+\newcommand{\timage}[3]{
+	\begin{figure}[!htb]
+		\centering
+			\begin{tikzpicture} [#1]
+				#2
+			\end{tikzpicture}
+		\caption{#3}
+	\end{figure}
 }
 
 % Формула с нумерацией
